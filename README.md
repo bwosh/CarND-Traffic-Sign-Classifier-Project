@@ -1,8 +1,12 @@
 # Project description
 
+This project is a part of:  
+ [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 ### Goal
 
 Main goal of this project is to use Deep Learning to classify traffic signs from [German Traffic Signs Benchmark](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) dataset.
+
 
 ### Dataset
 
