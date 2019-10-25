@@ -176,13 +176,13 @@ TOP1(prob=0.31): Double curve (classid=21)
 TOP2(prob=0.09): Bicycles crossing (classid=29)   
 **TOP3(prob=0.04): Children crossing (classid=28)**   
 TOP4(prob=0.04): Wild animals crossing (classid=31)   
-  
+
 Sign 4:  
-**TOP0(prob=0.40): Pedestrians (classid=27)**   
-TOP1(prob=0.31): Double curve (classid=21)   
-TOP2(prob=0.09): Bicycles crossing (classid=29)   
-TOP3(prob=0.04): Children crossing (classid=28)   
-TOP4(prob=0.04): Wild animals crossing (classid=31)   
+**TOP0(prob=1.00): No entry (classid=17)**   
+TOP1(prob=0.00): Stop (classid=14)  
+TOP2(prob=0.00): No passing for vehicles over 3.5 metric tons (classid=10)  
+TOP3(prob=0.00): Vehicles over 3.5 metric tons prohibited (classid=16)  
+TOP4(prob=0.00): Priority road (classid=12)  
 
 Sign 5:  
 **TOP0(prob=1.00): Stop (classid=14)**   
