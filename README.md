@@ -142,14 +142,13 @@ Images were cropped manually to be square-like. The testing scales image to 32x3
 
 **Results:**
 
-
-| Sign        | Classification result | 
-|-------------|-------------|-----|
-| ![alt text](/images/output_63_1.png) | Speed limit (50km/h) |
-| ![alt text](/images/output_63_3.png) | Yield | 
-| ![alt text](/images/output_63_5.png) | *Pedestrians* (!!!) | 
-| ![alt text](/images/output_63_7.png) | No entry | 
-| ![alt text](/images/output_63_9.png) | Stop | 
+ Sign        | Classification result 
+-------------|-------------|-----
+ ![alt text](/images/output_63_1.png) | Speed limit (50km/h)
+ ![alt text](/images/output_63_3.png) | Yield 
+ ![alt text](/images/output_63_5.png) | *Pedestrians* (!!!) 
+ ![alt text](/images/output_63_7.png) | No entry
+ ![alt text](/images/output_63_9.png) | Stop
 
 
 **Comment:**
