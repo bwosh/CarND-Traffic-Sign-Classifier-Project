@@ -142,20 +142,60 @@ Images were cropped manually to be square-like. The testing scales image to 32x3
 
 **Results:**
 
- Sign        | Classification result 
--------------|-------------
-![alt text](/images/output_63_1.png) | Speed limit (50km/h)
-![alt text](/images/output_63_3.png) | Yield 
-![alt text](/images/output_63_5.png) | *Pedestrians* (!!!) 
-![alt text](/images/output_63_7.png) | No entry
-![alt text](/images/output_63_9.png) | Stop
+No. | Sign        | Classification result 
+----|---------|-------------
+1 | ![alt text](/images/output_63_1.png) | Speed limit (50km/h)
+2 | ![alt text](/images/output_63_3.png) | Yield 
+3 | ![alt text](/images/output_63_5.png) | *Pedestrians* (!!!) 
+4 | ![alt text](/images/output_63_7.png) | No entry
+5 | ![alt text](/images/output_63_9.png) | Stop
 
+**Details:**
+
+Top 5 results for all signs are presented below.  
+Value in firs bracket corresponds to probability of being in this class (softmax used here.)
+Proper classes marked in bold.
+
+Sign 1:  
+**TOP0(prob=1.00): Speed limit (50km/h) (classid=2)**  
+TOP1(prob=0.00): Speed limit (80km/h) (classid=5)   
+TOP2(prob=0.00): Speed limit (70km/h) (classid=4)   
+TOP3(prob=0.00): Speed limit (30km/h) (classid=1)   
+TOP4(prob=0.00): Speed limit (120km/h) (classid=8)   
+
+Sign 2:  
+**TOP0(prob=1.00): Yield (classid=13)**  
+TOP1(prob=0.00): Speed limit (60km/h) (classid=3)  
+TOP2(prob=0.00): No vehicles (classid=15)  
+TOP3(prob=0.00): Speed limit (30km/h) (classid=1)  
+TOP4(prob=0.00): No passing (classid=9)  
+  
+Sign 3:  
+TOP0(prob=0.40): Pedestrians (classid=27)   
+TOP1(prob=0.31): Double curve (classid=21)   
+TOP2(prob=0.09): Bicycles crossing (classid=29)   
+**TOP3(prob=0.04): Children crossing (classid=28)**   
+TOP4(prob=0.04): Wild animals crossing (classid=31)   
+  
+Sign 4:  
+**TOP0(prob=0.40): Pedestrians (classid=27)**   
+TOP1(prob=0.31): Double curve (classid=21)   
+TOP2(prob=0.09): Bicycles crossing (classid=29)   
+TOP3(prob=0.04): Children crossing (classid=28)   
+TOP4(prob=0.04): Wild animals crossing (classid=31)   
+
+Sign 5:  
+**TOP0(prob=1.00): Stop (classid=14)**   
+TOP1(prob=0.00): No entry (classid=17)   
+TOP2(prob=0.00): Speed limit (20km/h) (classid=0)   
+TOP3(prob=0.00): No passing for vehicles over 3.5 metric tons (classid=10)   
+TOP4(prob=0.00): Road work (classid=25)   
 
 **Comment:**
 
 Even though sample signs haven't beed checked for similarity ith training dataset most of external signs were properly classified.
 
-'Children crossing' was classified as 'Pedestrians'. This is the case that was not visible in confusion matrix of test dataset. The real-life difference between those two signs is that on first there are two people visible ond secon on there is only one person. Part of the sign was ocluded by the tree what may cause tis misclassification.
+'Children crossing' was classified as 'Pedestrians'. This is the case that was not visible in confusion matrix of test dataset. The real-life difference between those two signs is that on first there are two people visible ond second on there is only one person. Part of the sign was ocluded by the tree what may cause tis misclassification. Thas uncertainty is also visible on softmax probability calculation - only for this one sample there are values 'fat from 1'.
 
 # Final word
 - The dataset presents many real-world challanges with position/lighting and shape of signs
